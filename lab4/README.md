@@ -64,7 +64,14 @@ arecord -D plughw:1 -c1 -r 48000 -f S32_LE -t wav -V mono -v file.wav
 ```
 
 10. Transfer the file ```file.wav``` to your laptop and play back onto a speaker.
-
+    The way you can do this is by inputting these commands (only for mac):
+    ```
+    sudo apt-get update
+    sudo apt-get install netatalk
+    ```
+    You can now go to finder, and under locations you will see "raspberrypi". Double click on the icon and you will be             prompted for the Pi login info. Once you input the information, you can find the file and play it back.
+    If you are having trouble, refer to this guide: https://chicagodist.com/blogs/news/using-netatalk-to-share-files-between-a-raspberry-pi-and-mac
+    
 ### If you can hear what you recorded, you are okay to proceed to the next steps. Otherwise, you need to spend some time on troubleshooting.
 
 11. Try the example program to detect beats per minute of a song.

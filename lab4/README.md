@@ -74,9 +74,12 @@ arecord -D plughw:1 -c1 -r 48000 -f S32_LE -t wav -V mono -v file.wav
     
 ### If you can hear what you recorded, you are okay to proceed to the next steps. Otherwise, you need to spend some time on troubleshooting.
 
-11. Try the example program to detect beats per minute of a song.
+11. Try the example program to detect beats per minute of a song. If the pip install fails or the code does not run, refer to this guide: https://pypi.org/project/JACK-Client/
 ```
 cd ~/iot-labs/lab4
+
+pip install JACK-Client
+
 jackd -r -d alsa -d hw:sndrpisimplecar -r 44100 -n 16 &
 ```
 

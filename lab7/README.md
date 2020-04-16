@@ -24,8 +24,8 @@ Please familiarize yourself with the following concepts before proceeding with t
 2. Run the example publisher and subscriber programs.
 ```
 cd ~/iot-labs/lab7
-python3 awsiotpub.py &
-python3 awsiotsub.py
+python awsiotpub.py &
+python awsiotsub.py
 ```
 Note the "&" sign after awsiotpub.py command, which put the publisher running in background so we can run the subscriber.
 

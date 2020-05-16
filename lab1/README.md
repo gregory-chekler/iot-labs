@@ -88,6 +88,7 @@ python3 toggleled.py
 ![PZE with GPIO LED](/images/blink1.png)
 
 ```
+sudo apt-get install wiringpi
 gcc -Wall -o blink blink.c -lwiringPi
 sudo ./blink
 ```
